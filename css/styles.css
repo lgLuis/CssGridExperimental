@@ -17,7 +17,10 @@ html {
      background-color: beige;
      border: 1px solid lightgrey;
      height: 100vh;
-     color: navy;
+     color: whitesmoke;
+     font-size: 1.6rem;
+     text-shadow: 1px 1px 1px black;
+     text-align: center;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      text-transform: uppercase;
      grid-template-areas: 
