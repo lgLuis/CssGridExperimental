@@ -10,4 +10,65 @@ html {
     box-sizing: inherit;
  }
 
- 
+ .contenedor{
+     display: grid;
+     margin: 0 auto;
+     max-width: 120rem;
+     background-color: beige;
+     border: 1px solid lightgrey;
+     height: 100vh;
+     color: navy;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     text-transform: uppercase;
+     grid-template-areas: 
+     "header"
+     "navegacion"
+     "cont-ppal"
+     "sidebar-izq"
+     "sidebar-der"
+     "aside"
+     "footer"     
+     ;
+ }
+
+@media(min-width:768px){
+    .contenedor{
+        grid-template-areas:
+        "header header header sidebar-der"
+        "navegacion sidebar-izq cont-ppal sidebar-der"
+        "navegacion sidebar-izq cont-ppal sidebar-der"
+        "aside sidebar-izq cont-ppal sidebar-der"
+        "aside footer footer footer"    
+        ;
+    }
+
+}
+
+ .header{
+     background-color: orange;
+     grid-area: header;
+ }
+ .navegacion{
+     background-color: orchid;
+     grid-area: navegacion;
+ }
+ .aside{
+     background-color: peachpuff;
+     grid-area: aside; 
+ }
+ .cont-ppal{
+     background-color: rebeccapurple;
+     grid-area: cont-ppal;
+ }
+ .sidebar-der{
+     background-color: royalblue;
+     grid-area: sidebar-der;
+ }
+ .sidebar-izq{
+     background-color: sienna;
+     grid-area: sidebar-izq;
+ }
+ .footer{
+     background-color: green;
+     grid-area: footer;
+ }
